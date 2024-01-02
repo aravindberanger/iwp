@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>View Records</title>
+<link rel="stylesheet" href="css/stayle.css" />
+
+<style>
+/* Reset some default styles */
+body, h1, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Header style */
+h1 {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form container style */
+.form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Link style */
+.form a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Button style */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Legend styling */
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<!-- Your PHP-generated HTML content here -->
+</body>
+</html>

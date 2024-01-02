@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS `users` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `username` varchar(50) NOT NULL,
+ `email` varchar(50) NOT NULL,
+ `password` varchar(50) NOT NULL,
+ `trn_date` datetime NOT NULL,
+ PRIMARY KEY (`id`)
+ );
+
+CREATE TABLE IF NOT EXISTS `students` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `trn_date` datetime NOT NULL DEFAULT current_timestamp(),
+ `regno` int(10) NOT NULL,
+ `name` varchar(50) NOT NULL,
+ `sex` int(11) NOT NULL,
+ `phone` bigint(20) NOT NULL,
+`qualification` varchar(30) NOT NULL,
+`email` varchar(30) NOT NULL,
+`dob` date NOT NULL,
+`address` varchar(40) NOT NULL,
+`imgContent` longblob NOT NULL,
+ `submittedby` varchar(50) NOT NULL,
+ PRIMARY KEY (`id`)
+ );

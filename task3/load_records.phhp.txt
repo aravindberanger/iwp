@@ -1,0 +1,22 @@
+<?php
+include("auth.php");
+require('db.php');
+
+$sel_query = "SELECT * FROM students ORDER BY id DESC;";
+$result = mysqli_query($con, $sel_query);
+
+if (!$result) {
+    die('Error fetching records: ' . mysqli_error($con));
+}
+
+while ($row = mysqli_fetch_assoc($result)) {
+    echo '<tr>';
+    echo '<td align="center">' . $row["id"] . '</td>';
+    // Repeat this for other table columns
+    // ...
+    echo '<td align="center"><a href="print.php?id=' . $row["id"] . '">print</a></td>';
+    echo '<td align="center"><a href="edit.php?id=' . $row["id"] . '">Edit</a></td>';
+    echo '<td align="center"><a href="delete.php?id=' . $row["id"] . '">Delete</a></td>';
+    echo '</tr>';
+}
+?>

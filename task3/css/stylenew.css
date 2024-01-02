@@ -1,0 +1,54 @@
+/* Reset default margin and padding */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+h1 {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the navigation links */
+p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the buttons */
+input[type="button"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style the result box */
+#result-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
