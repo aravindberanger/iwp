@@ -1,0 +1,32 @@
+<html>  
+<head>  
+    <title>User Registration system</title>  
+   
+    <link rel = "stylesheet" type = "text/css" href = "loginstyle.css">   
+</head>  
+<body>  
+    <div id = "frm">  
+        <h1>User Details Update Form</h1>  
+        <form name="f1" action = "updateuser.php"  method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user"  required/>  
+            </p>  
+            <p>
+                <label for="location">Choose your location:</label>
+
+                   <select name="location" id="location">
+<option value="puducherry">Puducherry</option>
+                   <option value="karaikal">Karalikal</option>
+                   <option value="mahe">Mahe</option>
+                   <option value="yanam">Yanam</option>
+                  </select>
+
+            <p>     
+                <input type =  "submit" id = "btn" value = "Register" />  
+            </p>  
+        </form>  
+    </div>  
+           
+</body>     
+</html> 
