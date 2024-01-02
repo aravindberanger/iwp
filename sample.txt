@@ -1,0 +1,29 @@
+Private Sub addTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles addTB.KeyPress
+        Dim allow As String = "123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,:"
+        If Not allow.Contains(e.KeyChar.ToString) Then
+            MessageBox.Show("Please enter a alphabet ")
+            e.KeyChar = ChrW(0)
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub ExpTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ExpTB.KeyPress
+        Dim allow As String = "1234567890"
+        If Not allow.Contains(e.KeyChar.ToString) Then
+            MessageBox.Show("Please enter a alphabet ")
+            e.KeyChar = ChrW(0)
+            e.Handled = True
+        End If
+    End Sub
+End Class
+
+
+   Private Sub ExpTB_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ExpTB.KeyPress
+        Dim allow As String = "1234567890-"
+        If Not allow.Contains(e.KeyChar.ToString) Then
+            MessageBox.Show("Please enter a alphabet ")
+            e.KeyChar = ChrW(0)
+            e.Handled = True
+        End If
+    End Sub
+End Class
